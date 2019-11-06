@@ -42,7 +42,7 @@ export default class App extends Component {
           
         })
 
-        console.log("ebere:  ",data)
+        console.log("ab:  ",data)
         // console.log(importantData)
         this.setState({
           isLoaded: true,
@@ -66,7 +66,7 @@ export default class App extends Component {
           <Navbar bg="light" variant="light">
             <Navbar.Brand href="home">Home</Navbar.Brand>
             <Nav className="mr-auto">
-              <Nav.Link href="Informations">Informations</Nav.Link>
+              
               <Nav.Link href="Spacevoices">Space Voices</Nav.Link>
             </Nav>
             <Form inline onSubmit={this.Moons}>

@@ -2,6 +2,11 @@ body{
     background-image: url("nasa.jpg");
 
   }
+
+  .backg{
+
+    background-image: url("solar.gif");
+  }
  button {
    size: 20px;
  }

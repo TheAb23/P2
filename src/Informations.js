@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {Media,Col,Carousel,} from 'react-bootstrap'
 import data from './data'
 import Home from'./Home'
+import './App.css'
 export default class Infromations extends Component {
 
     render() {
@@ -24,7 +25,7 @@ export default class Infromations extends Component {
 //         )
 //       console.log(itemsFm);
         return (
-            <div>
+            <div className="backg">
                 <h1> Title : {this.props.itemsFm.title} </h1>
                 <h2>location : {this.props.itemsFm.location}</h2>
          <img src={this.props.itemsFm.imgUrl}/>
