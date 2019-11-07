@@ -10,6 +10,7 @@ import {
 import Home from './Home';
 import Spacevoices from './Spacevoices';
 import Informations from './Informations';
+import Nasa from './Nasa';
 
 
 
@@ -63,19 +64,20 @@ export default class App extends Component {
         <BrowserRouter>
           <Navbar.Brand href="">
           </Navbar.Brand>
-          <Navbar bg="light" variant="light">
+          <Navbar bg="" variant="dark" scrolling fixed="top">
             <Navbar.Brand href="home">Home</Navbar.Brand>
             <Nav className="mr-auto">
-              
+      
               <Nav.Link href="Spacevoices">Space Voices</Nav.Link>
+              
             </Nav>
             <Form inline onSubmit={this.Moons}>
-              <FormControl name="Seachres" type="text" placeholder="Search" className="mr-sm-2" />
+              <FormControl  className="sr" name="Seachres" type="text" placeholder="Search for your info" className="search" />
               <Button type="submit" variant="dark">Search</Button>
             </Form>
           </Navbar>
        
-        
+          
           {this.state.itemsFm!==undefined &&this.state.itemsFm.map((item)=>{
             return <Informations itemsFm = {item}/>
           })}
@@ -84,6 +86,7 @@ export default class App extends Component {
             <Route path='/Home' component={Home} exact />
             <Route path='/Informations/:name' render={() => (this.state.items.length > 0) ? <Informations items={this.state.items.collection}/> : "null"}/>
             <Route path='/Spacevoices' component={Spacevoices} />
+            <Route path='/Nasa' component={Nasa} />
             <Route path='/' component={Home} />
           </Switch>
           

@@ -7,6 +7,10 @@ body{
 
     background-image: url("solar.gif");
   }
+  .backgg{
+
+    background-image: url("solar.gif");
+  }
  button {
    size: 20px;
  }
@@ -21,8 +25,21 @@ h1{
   border-radius: 150px;
  
 }
-h2{
-  color: white;
+.lo{
+  color: brown;
   font-family: Nasalization ;
+  size: 20px;
 
+}
+h2{
+  color:yellow;
+  font-family: Nasalization ;
+}
+
+
+@media screen and (max-width: 600px) {
+  body {
+    display: none;
+    
+  }
 }
